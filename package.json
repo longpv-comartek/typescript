@@ -23,6 +23,7 @@
         "nodemon": "^2.0.15"
     },
     "dependencies": {
+        "axios": "^0.26.0",
         "bignumber.js": "^9.0.2",
         "lodash": "^4.17.21",
         "memoizee": "^0.4.15",
