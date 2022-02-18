@@ -1,4 +1,3 @@
-//lodash
 import * as _ from 'lodash'
 //bignumber
 import { BigNumber } from 'bignumber.js'
@@ -300,15 +299,17 @@ console.log("toISOString :", date1.toISOString())
 const earlier = new Date(2019 - 3 - 26)// Khai báo ngày tháng sử dụng datestring
 const later = new Date(2019 - 3 - 26)
 console.log(earlier < later)//So sanh lon hon // true
-
 const isSameTime = (earlier: any, later: any) => earlier.getTime() === later.getTime()
 console.log(isSameTime(earlier, later))//So sanh bang //false
-
 const failDay = new Date(2021, 3, 33)
 console.log(failDay.toLocaleDateString())
-
 const dayStamp = new Date(1645000000000)// Sử dụng timestamp để khởi tạo ngày tháng.
 console.log(dayStamp.toDateString())//16/02/2022
-
 //typescript
 //modules
+// VN
+const dayVn = new Date()
+console.log('dayVn', dayVn);
+console.log('dayVn', moment(dayVn).format("MM-DDD-YYYY"));
+console.log(mmt.tz("2013-12-01", "America/Los_Angeles").format());
+console.log(mmt.tz("2013-01-01", "America/Los_Angeles").format());
